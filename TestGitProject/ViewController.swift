@@ -12,12 +12,14 @@ class ViewController: UIViewController {
     
     let someValue = "Hello Friends"
 
+    @IBOutlet weak var lblShowText: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         print(someValue)
         print(reverse(text: "Stressed"))
+        self.lblShowText.text = reverse(text: "Stressed")
     }
     
     func reverse(text: String) -> String {
