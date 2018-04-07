@@ -17,6 +17,11 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         print(someValue)
+        print(reverse(text: "Stressed"))
+    }
+    
+    func reverse(text: String) -> String {
+        return String(text.reversed())
     }
 
     override func didReceiveMemoryWarning() {
